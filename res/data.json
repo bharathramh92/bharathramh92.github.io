@@ -1,0 +1,166 @@
+{
+  "education": [
+    {
+      "university_name": "University of North Carolina, Charlotte",
+      "degree": "MS in Computer Science (Intelligent & Interactive Systems)",
+      "batch": "2015-2016",
+      "gpa": "3.70/4",
+      "info":{
+        "heading": "Life at UNC Charlotte",
+        "content": "Eagerness to get into Computer world and zeal for knowledge motivated me to enroll for Masters program and this streamlined my way of visualizating things with clarity. I will briefly walk through my journey of graduate life.<br><br>In my first semester(Spring 2015) learnt Data Structures & Algorithms, and Android. Learning Algorithms made my approach on solving problems a lot easier and I got really comfortable working with data structures. Android course was so interesting as this was my first framework and developed an App called xplore for the term project. Take away from this semester was Python, Java, Android and Algorithms. <br><br>In Summer(2015), I took project based courses and started my web development projects. Learning Django(Python) and Bootstrap during this time helped do other web apps later on.<br><br> Fall 2015 was a roller coster ride. Cloud computing, Natural Language Processing & Intelligent Systems courses were so good that they helped me explore the real world applications. Went to my first hackathon hacknc, and this gave me a lot of ideas. Even though our team didn't win the competition, take away from this was a lot. By the end of this semester, Big words like Hadoop, HDFS, Spark, Information Extraction, A* Search, etc. seemed so familiar and gave me the confidence to implement most of the real world applications. <br><br>Spring 2016. I previously took Data Structures & Algorithms and Cloud Computing under Prof. Srinivas Akella. Performing well in those courses made Professor choose me as Teaching Assistant for his Data Structures & Algorithms class. Robot Motion Planning course in this semester helped me to deal with robotics geometry and complex algorithms for Motion Planning. <br><br>This Masters program moulded me to deal with real world programming problems and gave me confidence that I can learn anything, that includes learning a completely new programming language and be good at it."
+      }
+    },
+    {
+      "university_name": "College of Engineering, Trivandrum",
+      "degree":  "B-Tech in Electrical & Electronics Engineering",
+      "batch": "2009-2013",
+      "gpa": "7.25/10",
+      "info":{
+        "heading": "Life at CET",
+        "content": "Things began at this very place. Learnt the basics of how to put together things for real. Did my first programming for embedded systems in Arduino C and this was my stepping stone in my programming career and went on doing image processing in opencv and use those details for robot navigation. Mathematical courses and Electronics courses gave me the foundation for logical reasoning. <br><br>Interest for programming started after seeing the Computer Science student's projects and made me do choose programming related projects(Arduino C, Python). Then coding started to become one of my hobby."
+      }
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Motion Planning",
+      "about": {
+        "snippet": "Implemented RRT* algorithm for a Car like Robot that allows the robot to move in a known environment which has obstacles.",
+        "description": "Motion planning also called piano mover’s problem, is a method for discretizing the movement controls and satisfy movement constraints for an autonomous robot. One example would be for a robot to find a path to move along a building which has obstacles. This is a PSPACE-hard problem. <br><br>Problem Statement: Given the environment details(obstacle positions, obstacle shapes), car details(turning radius constraint, car dimension, initial position) and final position of the car, control inputs for the car has to be formed.<br>Algorithm Used: RRT* algorithm for non-holonomic robots. <br>Miscellaneous: Here, if go close to the goal position with a tolerance, it is considered as success. <br>Programming Languages/Packages: Python, numpy, matplotlib, shapely, sphinx. <br>Approach/Challenges: Main challenge of this project was to balance caching and running time. Differential constraints for the car has to be considered since the car cannot from point A to point B at will.",
+        "links": {
+          "source_code": "https://github.com/bharathramh92/MotionPlanning",
+          "project_page": "https://bharathramh92.github.io/MotionPlanning/",
+          "project_demo_page": "",
+          "project_demo_youtube": ""
+        }
+      }
+    },
+    {
+      "name": "Doc Search",
+      "about": {
+        "snippet": "Implemented a search engine for books data which was crawled from Google Books API. This project included natural language processing as well.",
+        "description": "This is one my favourite projects that I have worked on and can be considered as a centerpiece in my project list. Search Engine is pivotal when the data is huge. This project was implemented using cloud computing tools. <br><br>Programming Languages/Packages: Java, Python, Apache Spark, nltk, and CoreNLP. <br>Problem Statement: Crawl the books data from any legitimate website and develop a search engine for this data. <br><br>Approach: Gathered search term from goodreads.com and used this data to query from Google Places API. Steps which was followed is as follows. <br>Keyword generation from description of each books was performed. Since there is no point in indexing the whole description for the book, only the Proper Noun were taken. In addition, experimenting of Named Entity Recognition (NER) resulted in poor output and hence was not considered.<br>Inverting index (say if 98765 : {title : 'Introduction to algorithms'}, where 98765 is the book id, inverting index step would revert the key value, i.e., the output for this will be ['Introduction': (98765, title), 'to':(98765, title), 'algorithms':(98765, title)]. Also the output should be treated as a list and should be appended with previous values) was performed on the retrieved meta data of books. For better sense, lemmatization was performed for the text as well. <br>Query phase is were the user would search for a term. Based on the query term, matched books are collected. Ranking of the retrieved data was main part in this project. Simple idea was, someone who searches for term, say 'corman' would want the books authored by corman, instead of having the books with title as 'corman'. Thus the meta data were provided weights. View count was also considered for ranking. Thus, based on the weight chart, the retrieved books were scored, sorted and hence the ranked search result.",
+        "links": {
+          "source_code": "https://github.com/bharathramh92/DocSearch",
+          "project_page": "http://bharathramh92.github.io/DocSearch/",
+          "project_demo_page": "",
+          "project_demo_youtube": ""
+        }
+      }
+    },
+    {
+      "name": "Shop",
+      "about": {
+        "snippet": "An e-commerce web application that includes user account management, dynamic categorization, CRUD for the inventory.",
+        "description": "This e-commerce was developed in an intent to learn more about Django framework. Reason for choosing an e-commerce was due to fact that any components can be added to an e-commerce website. <br><br>List of components that this web app has is, dynamic categorization, CRUD for items and inventories, and user account management.",
+        "links": {
+          "source_code": "https://github.com/bharathramh92/shop",
+          "project_page": "",
+          "project_demo_page": "",
+          "project_demo_youtube": ""
+        }
+      }
+    },
+    {
+      "name": "Xplore",
+      "about": {
+        "snippet": "An Android app that list Shows Nearby hangout places and friends.",
+        "description": "An Android application that shows places/friends based on the location provided by user.<br><br> Features included by this app is as follows. <br>&nbsp&nbsp Location can be current location/desired location<br>&nbsp&nbsp Shows Weather details<br>&nbsp&nbsp Shows Nearby Eateries<br>&nbsp&nbsp Shows Nearby Coffee shops<br>&nbsp&nbsp Shows Nearby Bars<br>&nbsp&nbsp Shows Nearby Hotels<br>&nbsp&nbsp Shows Nearby Attractions<br>&nbsp&nbsp Shows Nearby Friends<br>&nbsp&nbsp Shows Nearby Events<br>&nbsp&nbsp Shows Nearby Movies<br>&nbsp&nbsp Modification of search radius.<br><br>API's Used: Facebook Graph API, Google Places API",
+        "links": {
+          "source_code": "https://github.com/bharathramh92/xplore",
+          "project_page": "",
+          "project_demo_page": "",
+          "project_demo_youtube": "https://www.youtube.com/watch?v=pZq_VJEvJ8U"
+        }
+      }
+    },
+    {
+      "name": "Event Rater",
+      "about": {
+        "snippet": "A web app that rates a current event by performing sentiment analysis on the twitter data.",
+        "description": "A hackathon project at hacknc (conducted by UNC Chappel Hill) that rates a live event based on the twitter data. <br><br>&nbsp&nbspTwitter tags are extracted from the retrieved result and top 2 tags are taken. This on the assumption that most used tweets about the subject would be the most relevant tags.<br>&nbsp&nbspPositive sentiment(ps) and negative sentiments(ns) are again queried for the 2 retrieved tags and the ratio of ps/(ps+ns) is showed as the Output/Score (score on a scale of 0-1, were 0 is towards negative and 1 is towards overall positive sentiment). P.S We are taking only the tweets publised 48hrs prior to the user query. <br><br>Programming languague/packages: Python, Django, IBM Bluemix, Twitter API.",
+        "links": {
+          "source_code": "https://github.com/bharathramh92/hacknc_tweets",
+          "project_page": "",
+          "project_demo_page": "",
+          "project_demo_youtube": "https://www.youtube.com/watch?v=W6SpM8yVky0"
+        }
+      }
+    },
+    {
+      "name": "Hospital Finder/Rater",
+      "about": {
+        "snippet": "A web application that rates hospitals based on the user requirement.",
+        "description": "A hackathon project at charlottehack (event conductor and data provider was Premier Inc) that searches hospital.<br><br> This web application rates Hospitals based on Location, Hospital Type and Hospital Features such as Cost, Clinical Outcome, etc. The dataset was normalized and outlier detection was performed and a table is created. This table maps hospital to hospital features (cost, clinical outcome etc). <br><br>For the given query conditions the hospitals are first filtered based on the location (radius) and the weighted scores for each of these hospitals are taken and is sorted to have the final rank.",
+        "links": {
+          "source_code": "https://github.com/bharathramh92/CharlotteHack",
+          "project_page": "",
+          "project_demo_page": "",
+          "project_demo_youtube": "https://www.youtube.com/watch?v=9q4LlR5kX7w"
+        }
+      }
+    }
+  ],
+
+  "work_experience":[
+    {
+      "company": "University of North Carolina, Charlotte",
+      "position": "Graduate Teaching Assistant",
+      "location": "Charlotte, North Carolina, USA",
+      "period": "January 2016 - May 2016",
+      "description": {
+        "heading": "Teaching Assistant for Data Structures & Algorithms",
+        "content": "The best happened while doing my Masters was this job and I loved doing this. Bettered the most important skill, people skill. ",
+        "responsibilities": ["Designing programming assignment.", "Grading exams, homeworks and programming projects", "Holding office hours and assist the students in clarifying concepts", "Discuss the grading rubric for exams with the Professor" ]
+      }
+    },
+    {
+      "company": "Ericsson",
+      "position": "Engineer- Back office",
+      "location": "Noida, Uttar Pradesh, India",
+      "period": "Dec 2013 - Nov 2014",
+      "description": {
+        "heading": "Engineer at Ericsson",
+        "content": "This was my first professional job right after my bachelors. Going from Electrical & Electronics background to telecom world was a challenge.<br><br>Job Role was to maintain Unix servers responsible for Charging System.",
+        "responsibilities": ["Troubleshooting faults in the System", "Providing support during system failures", "Secondary Node owner for Ericsson Multi Mediation server", "Performing regular health checkups and backups", "Acceptance Testing for the node SDP"]
+      }
+    }
+  ],
+
+  "skills": {
+    "Python": "85",
+    "Java": "80",
+    "Javascript": "50",
+    "Django": "65",
+    "Android": "50",
+    "ReactJS": "70",
+    "Redux": "30",
+    "SQL": "40",
+    "Algorithms": "90",
+    "Data Structures": "90",
+    "HTML": "60",
+    "CSS": "50",
+    "BootStrap": "60",
+    "Apache Spark": "75",
+    "UNIX": "50",
+    "GIT": "50",
+    "JQuery": "30"
+  },
+
+  "contact": {
+    "description": "Contact in which ever easier way you feel. I will respond at my earliest. Check out my profile links shown below.",
+    "email": "bharathramh92@gmail.com",
+    "phone_number": "Please contact me via email",
+    "linkedIn": "https://linkedin.com/in/bharathramh92",
+    "github": "https://github.com/bharathramh92",
+    "facebook": "https://fb.com/bharathramh92"
+  },
+
+  "resume": {
+    "description": "Please check out my resume for filing.",
+    "file": "res/resume/bharath_resume.pdf"
+  }
+
+
+}

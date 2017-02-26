@@ -1,0 +1,219 @@
+#dynamicModal h2{
+    text-align: center;
+}
+
+#dynamicModal li{
+    text-align: center;
+}
+
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+}
+#head-name {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#photo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-me .container {
+    /*height: 100%;*/
+
+}
+
+
+#about-me .container .row {
+    padding-top: 3%;
+    /*display: flex;*/
+}
+
+#about-me .row div:nth-of-type(2){
+    padding: 10% 5%;
+}
+
+.left-img {
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 10%;
+    margin-top: 1%;
+    /*align-items: stretch;*/
+}
+
+
+.left-img img{
+    margin: 8%;
+}
+
+.left-img p {
+    text-align: center;
+    margin-top: 1%;
+    font-size: 1.2em;
+    font-family: 'Nova Mono',cursive ;
+}
+
+.right-img {
+    /*align-items: stretch;*/
+
+}
+
+.right_img_inner{
+    /*top: 30%;*/
+    /*position: absolute;*/
+    /*padding: 2%;*/
+}
+
+
+
+.welcome {
+    text-align: center;
+    font-size: 3em;
+    position: relative;
+    top: 30%;
+    font-family: 'Dancing Script', cursive;
+}
+
+.welcome-content {
+    font-size: 1.5em;
+    position: relative;
+    top: 40%;
+    font-family: 'Comfortaa', cursive;
+}
+
+.education-content{
+    border: 1px solid black;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 12%;
+    text-align: center;
+}
+
+.education-content:hover{
+    cursor: pointer;
+
+}
+
+.project {
+
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid black;
+    border-radius: 6%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.project:hover {
+    cursor: pointer;
+}
+
+.more-info .glyphicon{
+    font-size: 3em;
+}
+
+#university-name{
+    /*display: block;*/
+}
+
+#university-specialization{
+    /*display: block;*/
+}
+
+#batch{
+    /*display: block;*/
+}
+
+#gpa {
+    /*display: block;*/
+}
+header {
+    /*height:90vh;*/
+    /*background-color: #a3a3a3;*/
+}
+
+section .head {
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#education {
+    /*background-color: red;*/
+}
+
+#project {
+    /*background-color: gray;*/
+}
+
+#skills {
+
+}
+
+#skills li{
+    display: inline-block;
+
+}
+
+#skills li:hover{
+    font-size: 200%;
+    cursor: help;
+}
+
+
+#work-experience {
+}
+
+
+#work-experience:hover {
+    cursor: pointer;
+}
+
+
+.work-experience-element {
+    border: 1px solid black;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 8%;
+    text-align: center;
+}
+
+#contact {
+    /*background: brown;*/
+}
+
+#contact .thumbnail {
+    padding: 1%;
+}
+
+#contact_form_message {
+    height: 10em;
+}
+
+#contact li{
+    display: inline-block;
+}
+
+
+i {
+    color: #1d1d1d;
+}
+
+footer {
+    text-align: center;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#phone_logo:hover{
+    cursor: pointer;
+}
